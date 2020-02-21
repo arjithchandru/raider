@@ -1,0 +1,306 @@
+<html>
+<head>
+ 
+</head>
+
+ 
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+.destination{
+	align:middle;
+	}
+#heading{
+		font-size:60px;
+		font-family:Showcard Gothic;
+		font-weight:20px;
+		color:silver;
+		}
+.destination table{
+	position:absolute;
+	left:50px;
+		background-color:black;
+		width:1300px;
+		position:relative;
+		left:5px;
+		 
+	}
+.destination td{
+	 padding-top: 40px;
+    padding-bottom: 40px;
+	}
+.destination img{
+	height:200px;
+	width:400px;
+	display: block;
+    margin-left: -50px;
+    margin-right: auto;
+	border-radius:40px;
+	border-color:white;
+	}
+.destination button{
+	 margin-left: -50px;
+    margin-right: auto;
+	display: block;
+	font-family:arial black;
+	color:white;
+	}
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  
+   
+}
+#heading1{
+	font-family:Showcard Gothic;
+	font-size:30px;
+	color:blue;
+	}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color:grey;
+}
+	</style>
+<body>
+<div class="destination">
+<table   cellpadding="10" >
+<th colspan=2><p id="heading" align="middle">Top Destinations</th>
+<tr></tr>
+<tr>
+<td>
+		 <div class="container">
+			<img src="ladakh1.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#leh">Leh Ladakh</button></div>
+			</div>
+			</div> 
+		 
+</td>
+<td>
+	<div class="container">
+			<img src="nubra.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#nubra">Nubra Valley</button></div>
+			</div>
+			</div>
+        
+</td>
+</tr>
+<tr><br></tr>
+<tr>
+<td>
+	  <div class="container">
+			<img src="golden.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#golden">Golden Temple</button></div>
+			</div>
+			</div>
+        
+</td>
+<td>
+		 
+        <div class="container">
+			<img src="pangong.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#tso">Pangong Tso</button></div>
+			</div>
+			</div>
+        
+</td>
+</tr>
+
+<tr><br></tr>
+<tr>
+<td>
+	  <div class="container">
+			<img src="taj.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#taj">Taj Mahal</button></div>
+			</div>
+			</div>
+        
+</td>
+<td>
+		 
+        <div class="container">
+			<img src="red.jpg" alt="Avatar" class="image"  >
+			<div class="middle">
+			<div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#red">Red Fort</button></div>
+			</div>
+			</div>
+        
+</td>
+</tr>
+
+</table>
+</div>
+
+<div id="leh" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>LEH LADAKH</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Leh, a high-desert city in the Himalayas, is the capital of the Leh region in northern India’s Jammu and Kashmir state. Originally a stop for trading caravans, Leh is now known for its Buddhist sites and nearby trekking areas. Massive 17th-century Leh Palace, modeled on the Dalai Lama’s former home (Tibet’s Potala Palace), overlooks the old town’s bazaar and mazelike lanes.
+			<br>
+			Elevation: 3,500 m
+		 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="nubra" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>NUBRA VALLEY</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Nubra is a tri-armed valley located to the north east of Ladakh valley. Diskit, the headquarter of eponymous Subdivision and also of Nubra tehsil, is about 150 km north from Leh town, the capital of Ladakh district, Jammu and Kashmir, India. Local scholars say that its original name was Ldumra  
+			<br><br>
+			District:Leh
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="golden" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>GOLDEN TEMPLE</b></h4>
+      </div>
+      <div class="modal-body">
+        <p> The Harmandir Sahib, also known as Darbar Sahib, is a Gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent pilgrimage site of Sikhism. It is usually called the Golden Temple in English, because it is plated with gold. <br><br>
+			<BR>
+			District:Punjab
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="tso" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>PANGONG TSO</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>  Pangong Tso, Tibetan for "high grassland lake", also referred to as Pangong Lake, is an endorheic lake in the Himalayas situated at a height of about 4,350 m. It is 134 km long and extends from India to the Tibetan Autonomous Region, China. Wikipedia
+			<br>
+			Surface elevation: 4,250 m
+			<br>
+			Length: 134 km
+			<br>
+			Area: 699.3 km²
+			<br>
+			Max depth: 100 m
+			<br>
+			Location: Ladakh, Jammu and Kashmir
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="taj" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>TAJ MAHAL</b></h4>
+      </div>
+      <div class="modal-body">
+        <p> The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favourite wife, Mumtaz Mahal. It also houses the tomb of Shah Jahan, the builder<br>
+			Surface elevation: 4,250 m
+			<br>
+			Location: Agra
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="red" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="heading1"><b>RED FORT</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>  The Red Fort is a historic fort in the city of Delhi in India. Every year on the Independence day of India, the Prime Minister hoists the Indian "tricolour flag" at the main gate of the fort and delivers a nationally broadcast speech from its ramparts.
+			<br>
+			Location: Delhi
+			</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
