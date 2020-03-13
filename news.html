@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.left {
+  left: 0;
+}
+
+
+.right {
+  left: 50%;
+}
+
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .timeline::after {
+  left: 31px;
+  }
+  
+  
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="timeline">
+        <div class="container right">
+                <div class="content">
+                  <h2>2019</h2>
+                  <p>Motorized Bicycle racing began in Southern California at the Willow Springs International Motorsports Park Go Kart track in Rosamond, CA on June 18, 2011. SoCal Motor Bicycle Racing continues to hold races in Southern California at Grange Motor Circuit in Apple Valley, California after the first race on October 20, 2011 and at Willow Springs International Motorsports Park.</p>
+                </div>
+              </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>starts with recognition for Casino de Monte-Carlo, with a double award presented at ICE London, the major international meeting for Gaming professionals: the ‘Casino of the year’ title was renewed for the 2nd consecutive year and ‘Gaming Operator UK & Europe 2020’ was won</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>The "Bumble Bike" friction drive (now Golden Eagle belt drive) is chosen as "Official Transportation" at the Knoxville Worlds Fair.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2015</h2>
+      <p>Motorized Bicycling enjoys a resurgence in popularity, both as hobby and serious alternative transportation.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2012</h2>
+      <p>Turismo de Portugal (TdP) recently concluded its multi-city roadshows in the 4 major cities of India – Mumbai, Bangalore, Ahmedabad and New Delhi with the announcement of opening their first India office in the capital city of New Delhi.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2011</h2>
+      <p>A motorized bicycle ridden by Augie Deabler is accepted as an official entrant at the Bonneville Salt Flats "World of Speed '08." He used a Golden Eagle/Tanaka 32cc, and recorded a top speed in the standing mile of 32.4MPH.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2007</h2>
+      <p>Outbound Travel Mart (OTM), India’s largest outbound travel exhibition, was held from February 3 to 5 in Mumbai. Skal International India had a pavilion for the first time which was managed by Skal International Mumbai South Club-732 in a very prominent position. Six members from the club were exhibitors, namely, Ereisen AG; Kerala Holiday Mart.</p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

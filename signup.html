@@ -309,7 +309,7 @@ body{
 </style>
 <meta name="robots" content="noindex, nofollow">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <link type="text/javascript" src="script.js">
+ 
 </head>
 <body>
  <form id="sign" autocomplete="off">
@@ -350,13 +350,11 @@ body{
  <script>
  
 $(document).ready(function(){
-				 $("#sub").click(function(e){        
-			e.preventDefault();
-         var formData = {
-			'name' 				: $('input[name=name]').val(),
-			'mail' 			: $('input[name=mail]').val(),
-			'pwd' 	: $('input[name=pwd]').val()
-		};
+				 $("#sub").click(function(){        
+			   var name =$('input[name=name]').val();
+         var mail =$('input[name=mail]').val();
+         var pwd  =$('input[name=pwd]').val();
+         var formData ='&name1='+name+'&mail1='+mail+'&pwd1='+pwd; 
 			// AJAX Code To Submit Form.
 		$.ajax({
 			type: "POST",
@@ -364,79 +362,17 @@ $(document).ready(function(){
 			data: formData,
 			cache: false,
 			success: function(result){
-					 
+        window.location.href="http://localhost/raider-master/sam.html";
 			}
 
     });
-	location.reload(true);
-	window.open("http://localhost/blog/phpsam.html");
-}
+	
+	
+         }
 	 
 	});
 	   
-	var $regexname=/^([a-zA-Z]{3,16})$/;
-	var $regexmail=/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-	var $regexpass=/^[A-Za-z0-9!@#$%^&*()_]{8,15}$/;
-	var pass1 = $("#p1").val();
-	var pass2 = $("#p2").val();
-	 
-    $('.name').on('keypress keydown keyup',function(){
-             if (!$(this).val().match($regexname)) {
-				document.getElementById("sub").disabled = true;
-                 $('.emsg1').removeClass('hidden');
-                 $('.emsg1').show();
-				
-             }
-           else{ 
-		    document.getElementById("sub").disabled = false;  
-                $('.emsg1').addClass('hidden');
-				flag+=1;
-		 
-			   }
-         });
-		$('.mail').on('keypress keydown keyup',function(){
-             if (!$(this).val().match($regexmail)) {
-				document.getElementById("sub").disabled = true;
-                 $('.emsg2').removeClass('hidden');
-                 $('.emsg2').show();
-				
-             }
-           else{ 
-		    document.getElementById("sub").disabled = false;  
-                $('.emsg2').addClass('hidden');
-				 
-			   }
-         });
-		 $('.pass').on('keypress keydown keyup',function(){
-             if (!$(this).val().match($regexpass)) { 
-				document.getElementById("sub").disabled = true;
-				$('.emsg3').removeClass('hidden');
-                 $('.emsg3').show();
- 
-			 }
-           else{ 
-		    document.getElementById("sub").disabled = false;  
-                $('.emsg3').addClass('hidden');
-                document.getElementById("sub").disabled = false;
-			   }
-         });
-		  $('.repass').on('keypress keydown keyup',function(){
-             if ($('#p1').val() !== $('#p2').val()) { 
-			 document.getElementById("sub").disabled = true;
-                 $('.emsg4').removeClass('hidden');
-                 $('.emsg4').show();
-			 
-             }
-           else{
- document.getElementById("sub").disabled = false;  		   
-                $('.emsg4').addClass('hidden');
-               
-			  }
-         });
 	
- 
-		 
-});
 
 </script>
  
